@@ -1,7 +1,7 @@
 # Groovey-developer-Course
 
 
-- Optionally typed language for the Java Platform.
+- Optionally typed language for the Java Platform. IT was designed to build on top of Java, not replace it.]
 - Inspired by Python, Smalltalk
 - The groovy Compiler can compile Java
 - Powerful feature such as Closures, Builders,
@@ -39,3 +39,14 @@ You can also run this ".groovy" file with your java compiler too.
 The groovy console is a GUI based window that allows us to create and run groovy scripts without the fuss of setting up an IDE. Its good for getting started and testing code. 
 
 To open it type `groovyConsole` in your terminal adn then the GUI will appear once it has loaded. The groovy console also has the Groovy AST ( Abstract Syntax Tree) which allows you to see the java that made the simple groovy code you wrote. For example the getters and setters in Java that made the "Hello, World" String you printed using `println`.
+
+
+### IntelliJ
+
+My groovy files were placed at /Users/MyName/.sdkman/candidates/groovy
+
+### Compiling our first script
+
+1. We can write our script in a text editor , use groovyc to compile it and then run `groovy filename` minus the extension, eg `hello.groovy` is run as `groovyc hello`.
+2. we can run it in the intelliJ Ui from three different locations in the UI.
+3. We can run it by opening a `groovysh` and typing in the commands.
