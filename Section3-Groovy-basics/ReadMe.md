@@ -48,3 +48,14 @@ In Java when you create a variable with a primitive types , you cannot invoke me
 ### Annotations and AST transformations
 
 Annotations are ways to communicate with the compiler. For example at he top of a class you might put `@Controller`. This will define to the compiler that the particular set of code is a controller. Upi can event pass these arguments eg `@Controller(name="MyHomeController)`. for the most part we will be the consumers of controllers , but you cna make your own ones; but thats not for beginners. Unlike the Java Annotations. they can be used to alter the semantics of a language. Another example is the AST transformation Annotation. 
+
+### Grapes
+
+Grape is a jar dependency manager embedded into groovy. Grape lets you quicky add Maven dependencies to you class path which makes scripting much easier.
+
+"http://docs.groovy-lang.org/latest/html/documentation/grape.html"
+
+We use the `@Grab()` annotation to pull in a dependency library and here is where they can be found. 
+
+`@Grab(group='org.springframework', module='spring-orm', version='3.2.5.RELEASE')`
+`@Grab('org.springframework:spring-orm:3.2.5.RELEASE')`
