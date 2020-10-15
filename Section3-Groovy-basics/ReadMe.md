@@ -40,3 +40,11 @@ println "Hello from myscript.groovy"
 ```
 
 If you create a class you would need to have the same name as the classname in the class file. The convention is to name classes with a CAPITAL letter.
+
+### Numbers
+
+In Java when you create a variable with a primitive types , you cannot invoke methods on them because they are primitive types, not objects. 
+
+### Annotations and AST transformations
+
+Annotations are ways to communicate with the compiler. For example at he top of a class you might put `@Controller`. This will define to the compiler that the particular set of code is a controller. Upi can event pass these arguments eg `@Controller(name="MyHomeController)`. for the most part we will be the consumers of controllers , but you cna make your own ones; but thats not for beginners. Unlike the Java Annotations. they can be used to alter the semantics of a language. Another example is the AST transformation Annotation. 
