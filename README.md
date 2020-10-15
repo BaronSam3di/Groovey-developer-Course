@@ -7,6 +7,7 @@
 - Powerful feature such as Closures, Builders,
 - Domain Specific Languages ( DSL)
 - Great for writing concise and maintainable tests  
+- Much more than a scripting language
 
 ### sdk man
 
@@ -40,6 +41,8 @@ The groovy console is a GUI based window that allows us to create and run groovy
 
 To open it type `groovyConsole` in your terminal adn then the GUI will appear once it has loaded. The groovy console also has the Groovy AST ( Abstract Syntax Tree) which allows you to see the java that made the simple groovy code you wrote. For example the getters and setters in Java that made the "Hello, World" String you printed using `println`.
 
+You can pass file names to open in the groovyConsole eg - `groovyConsole assertions.groovy` 
+
 
 ### IntelliJ
 
@@ -50,3 +53,25 @@ My groovy files were placed at /Users/MyName/.sdkman/candidates/groovy
 1. We can write our script in a text editor , use groovyc to compile it and then run `groovy filename` minus the extension, eg `hello.groovy` is run as `groovyc hello`.
 2. we can run it in the intelliJ Ui from three different locations in the UI.
 3. We can run it by opening a `groovysh` and typing in the commands.
+
+
+### Comments
+
+` // this is a single line comment`
+
+`/*
+
+This is a multiline comment
+
+look!!
+
+*/`
+
+/*
+\* These are doc strings
+\* that will be noticed by for documentation
+*/
+
+You can also run groovy scripts with a BASH shebang comment such as 
+
+`#!usr/bin/env groovy`
