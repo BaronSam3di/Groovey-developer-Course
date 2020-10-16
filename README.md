@@ -75,3 +75,10 @@ look!!
 You can also run groovy scripts with a BASH shebang comment such as 
 
 `#!usr/bin/env groovy`
+
+### Data Types in Groovy
+
+To understand Data types in Groovy we need to understand the ones that are available from JAva. Java is a statically typed language , which means that all variables need ot be declared before they can be used. 
+This involves state the variables type and name. 
+
+The 8+1 primitive data types in Java. `byte , short, int , long, float, double, char String, Boolean` 
