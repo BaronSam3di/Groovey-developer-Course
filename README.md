@@ -152,3 +152,11 @@ concat("a","b","c","d","e")
 ### Currying 
 
 This referese the concept of partial application. It will let you set the value of param of a closure and return a new closure with one less parameter. 
+
+### Closures Delegate
+
+Maybe you think that a Closure is a lamda expresion to support function programming. tis is half right. Being able to change the closures delegate makes them really unique. The delegate scope is part of three scopes that a closure has.
+
+```this```. The THIS scope corresponds to the enclosing class where the closure us defined.
+```owner```. The OWNER corresponds to the enclosing object where the closure is defined, which may be either a class or a closure.
+```delegate```. Corresponding to a third part object where methods, calls or properties are resolved whenever the receiver of the message is not defined. This is where the magic starts to happen.
