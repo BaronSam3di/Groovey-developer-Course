@@ -177,3 +177,21 @@ Number // all true apart from 0
 Char
 not NULL
 ```
+
+### Runtime MetaProgramming 
+
+This is the writing of computer programs, that then write or manipulate other programs or write to themselves.
+
+- Meta Object Protocol (MOP)
+
+"The MOP is a collection of rules of how a request for a method call is handled bhy the Groovy runtime system and how to control the intermediate ;ayer." - Groovy in Action 2md Edition
+
+Whenever calls a method groovy will ask the intermediate layer on a set of rules in tree. This intermediate layer is called teh MOP.
+
+### http status codes
+
+1xx - Informational
+2xx - Success
+3xx - Redirection
+4xx - Client Error
+5xx - Server Error
