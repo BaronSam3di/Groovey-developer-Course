@@ -60,3 +60,8 @@ switch(num) {
     default:
         println "Defaulting" 
 }
+
+// in 
+def validAges = 18..35
+def someAge = 19
+println someAge in validAges
