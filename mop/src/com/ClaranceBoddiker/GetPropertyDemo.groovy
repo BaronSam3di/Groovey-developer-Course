@@ -17,8 +17,8 @@ class PropertyDemo {
         }
         metaClass.getProperty(this,name)
     }
-    }
 }
+
 
 
 def pd = new PropertyDemo()

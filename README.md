@@ -184,9 +184,27 @@ This is the writing of computer programs, that then write or manipulate other pr
 
 - Meta Object Protocol (MOP)
 
-"The MOP is a collection of rules of how a request for a method call is handled bhy the Groovy runtime system and how to control the intermediate ;ayer." - Groovy in Action 2md Edition
+"The MOP is a collection of rules of how a request for a method call is handled bhy the Groovy runtime system and how to control the intermediate layer." - Groovy in Action 2md Edition
 
 Whenever calls a method groovy will ask the intermediate layer on a set of rules in tree. This intermediate layer is called teh MOP.
+
+The three classes of object that can be called when working with Groovy are the POJO, POGO and the Groovy interceptor. 
+
+The Decision tree for a method call in groovy is as follows.
+
+1. Does the class implement GroovyImperceptible
+    YES - Call its InvokeMethod() - Break
+2. NO - Does the method exist in the MetaClass or this.Class?
+    YES - Call interceptor or original method - Break
+3. NO - Does the Property exist in the MetaClass or Class?
+    YES - Is the the Property type Closure?
+        YES - Call closure's call() method. Break
+4. NO - Does it have methodMissing()?
+        YES - Call its methodMissing() - Break
+5. NO - Does it have invokeMethod()
+       YES -  Call its InvokeMethod(). - Break
+       NO - Throw MissingMethodException() - Break
+     
 
 ### http status codes
 

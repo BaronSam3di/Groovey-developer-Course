@@ -13,7 +13,7 @@ class InvokeDemo {
     }
 }
 
-def invokeDemo = new InvokeDemo()
+def myDemo = new InvokeDemo()
 
-assert invokeDemo.test() == "Method exists"
-assert invokeDemo.someMethod() == 'called invoked method []'
+assert myDemo.test() == "Method exists"
+assert myDemo.someMethod() == 'called invoked method []'
