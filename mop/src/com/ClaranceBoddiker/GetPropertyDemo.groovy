@@ -1,6 +1,6 @@
 package com.ClaranceBoddiker
 
-// Every read acces to a property ca nbe intrcepted by overriding the getProperty() methof od the current object.
+// Every read access to a property can be intrcepted by overriding the getProperty() methof od the current object.
 
 class PropertyDemo {
 
