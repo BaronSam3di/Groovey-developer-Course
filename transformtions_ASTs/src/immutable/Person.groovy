@@ -1,0 +1,4 @@
+package immutable
+
+class Person {
+}

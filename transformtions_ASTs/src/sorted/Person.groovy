@@ -1,0 +1,4 @@
+package sorted
+
+class Person {
+}

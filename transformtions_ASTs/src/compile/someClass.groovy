@@ -1,0 +1,4 @@
+package compile
+
+class someClass {
+}

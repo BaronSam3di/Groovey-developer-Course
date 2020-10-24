@@ -205,6 +205,37 @@ The Decision tree for a method call in groovy is as follows.
        YES -  Call its InvokeMethod(). - Break
        NO - Throw MissingMethodException() - Break
      
+### Transformations
+
+Groovy uses annotations in the code to declare certain extensions to existing native methods. For example if you place at the top of your class deceleration. The slow way to set these up is within the class body; If you type cmd+n in IntelliJ to get the menu up. However if you tpe "@xxxxxxxxxx" at the top of the function you can call it in a much simpler way.
+
+```
+@ToString(includeNames = true,excludes = ["email"])             <<<
+class Person {
+    String first, last, email
+}
+``` 
+This will format the printing of this class to include the variable names and exclude the email.
+
+there are many of these types of [Transformations](https://groovy-lang.org/metaprogramming.html#_available_ast_transformations).
+
+@ToString
+@EqualsAndHashCode              // Checks equality by values not ===
+@TupleConstructor
+@Canonical    // Combines ToString, EqualsAndHashCode and TupleConstructor
+
+@Singleton      // makes sure only one instance of a class can exist and so follows your particular standard
+@Sortable(includes = ['lastname','firstname'])   // makes things easier to sort. This will sort by lastname and then by firstname
+@immutable      // makes instances UNchangeable ie 'final'
+@TypeChecked    // Allows us to use groovy in a more static way by being more robust with the checking of var types
+@CompileStatic  // allows you to 
+@Builder        / gives you new wa yto construct objects. Builders are from the 'groovy.transform.builder' package
+
+### Builders
+
+These allow you to build out other code such as xml or HTML which can be a tedious task in Groovy.
+`builders can write ot files for you among other controls. Ken Cousin suggests using hte tests from the open source language to understand the ways the different builders work. 
+
 
 ### http status codes
 

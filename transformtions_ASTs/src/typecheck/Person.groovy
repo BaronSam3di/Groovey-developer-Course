@@ -1,0 +1,4 @@
+package typecheck
+
+class Person {
+}
