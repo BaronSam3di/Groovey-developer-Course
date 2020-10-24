@@ -237,10 +237,26 @@ These allow you to build out other code such as xml or HTML which can be a tedio
 `builders can write ot files for you among other controls. Ken Cousin suggests using hte tests from the open source language to understand the ways the different builders work. 
 
 
-### http status codes
+## HTTP status codes
 
-1xx - Informational
-2xx - Success
-3xx - Redirection
-4xx - Client Error
-5xx - Server Error
+These are codes that a call would return to give you status about the call we made
+
+
+### 1xx - Informational
+
+### 2xx - Success
+- 200 - OK. Success
+- 201 - New resource was successfully created
+- 204 - Fulfilled request but No Content to return
+### 3xx - Redirection
+- 301 - Moved permanently - The resource has been moved to a new resource.
+- 304 - Not modified. the content is there but it has not changed
+- 307 - Temporary Redirect. Suggest repeating with a different URI.
+### 4xx - Client Error
+- 400 Bad request - Malformed syntax or Not understood
+- 401 Unauthorised - Authentication has failed.
+- 403 Forbidden - Legal request but you don't have permission so authentication is irrelevant
+- 404 Not Found - Could not find the requested resource
+### 5xx - Server Error
+- 500 Internal Server error - unexpected condition which prevented the server from fulfilling the request.
+- 502 Bad Gateway - the upstream server sent an invalid request.
