@@ -1,5 +1,3 @@
-
-def books = '''
 {
     "books": {
         "currentBook": {
@@ -31,9 +29,3 @@ def books = '''
     }
 }
 
-
-
-JsonSlurper slurper = new JsonSlurper()
-
-def json = slurper.parseText(books)
-'''
